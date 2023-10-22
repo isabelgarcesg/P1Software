@@ -6,6 +6,9 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title mb-4 text-center"><strong>Resultado Prueba de coagulación</strong></h4>
+                        <!-- BOTON PARA REGRESAR -->
+                        <router-link :to="{ name: 'ListarPacientes' }"
+                                ><span class="material-icons text-muted" style="font-size: 24px;">arrow_back</span></router-link>
                         <div>
                             <br>
                         </div>
@@ -44,8 +47,8 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <div class="regresar"><router-link :to="{ name: 'ListarPacientes' }"
-                                class="btn btn-primary">Regresar</router-link></div>
+                        <!-- <div class="regresar"><router-link :to="{ name: 'ListarPacientes' }"
+                                class="btn btn-primary">Regresar</router-link></div> -->
 
                     </div>
                 </div>
