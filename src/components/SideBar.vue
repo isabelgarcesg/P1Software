@@ -30,10 +30,10 @@
                 <span class="text">Laboratorio</span>
             </router-link> 
 
-            <router-link class="botton" to="/ListarUnPacientes">
+            <!-- <router-link class="botton" to="/ListarUnPaciente">
                 <span class="material-icons">person</span>
                 <span class="text">Paciente</span>
-            </router-link> 
+            </router-link>  -->
 
 
 

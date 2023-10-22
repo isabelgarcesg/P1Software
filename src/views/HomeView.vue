@@ -8,27 +8,60 @@
             <div class="text-section">
                 <h1>LabMed Diagnostics</h1>
                 <p>Sistema de gestión de la información del laboratorio</p>
+                <div class="input-group mb-3">
+                    <form v-on:submit.prevent="listarPaciente">
+                        <input type="text" class="form-control" v-model="paciente.documento"
+                            placeholder="Ingrese el documento del paciente a buscar" aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Buscar</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="cuerpo">
             <div class="parrafo-background">
                 <p class="parrafo-azul">
-                    <br> <br>Somos un laboratorio, con más de una década de experiencia, nos enorgullece servir a la comunidad con compromiso y dedicación. 
-                    <br> <br>Nuestra pasión por la salud y la calidad nos ha convertido en un referente confiable para pruebas diagnósticas precisas. 
-                    <br> <br>Cada día, trabajamos incansablemente para ofrecer resultados confiables que marcan la diferencia en la vida de las personas
+                    <br> <br>Somos un laboratorio, con más de una década de experiencia, nos enorgullece servir a la
+                    comunidad con compromiso y dedicación.
+                    <br> <br>Nuestra pasión por la salud y la calidad nos ha convertido en un referente confiable para
+                    pruebas diagnósticas precisas.
+                    <br> <br>Cada día, trabajamos incansablemente para ofrecer resultados confiables que marcan la
+                    diferencia en la vida de las personas
                 </p>
             </div>
             <img class="tamano2" :src="require('@/assets/fondo.jpg')" alt="Fondo">
         </div>
     </main>
 </template>
+
+<script>
+export default {
+
+    data() {
+        return {
+            paciente: {}
+        }
+    },
+    methods: {
+        //  SI QUIERE VERIFICAR QUE SE CREO LA ENTIDAD PONGA EL SIGUIENTE LINK EN EL NAVEGADOR:
+        // https://redb.qsystems.co/QS3100/QServlet?operation=queryEntityByTenancy&tna=6&key=11e2e476-717b-4898-ac02-693abdecdc9b
+        listarPaciente() {
+            console.log(this.paciente)
+            console.log(this.paciente.documento)
+            window.location.href = "/ListarUnPaciente/" + this.paciente.documento //Redirecciona a la ruta listar
+        }
+    }
+}
+</script>
+
 <style lang="scss" scoped>
 .top-bar {
     background-color: var(--dark-alt);
     display: flex;
     align-items: center;
     padding: 10px;
-    max-height: 180px; /* Ajusta el alto máximo de la barra superior */
+    max-height: 180px;
+    /* Ajusta el alto máximo de la barra superior */
 }
 
 .logo-section {
@@ -36,8 +69,10 @@
 }
 
 .tamano {
-    max-height: 50%; /* Ajusta la altura máxima del logo al de la barra superior */
-    width: 150px; /* Ancho automático para mantener la proporción */
+    max-height: 50%;
+    /* Ajusta la altura máxima del logo al de la barra superior */
+    width: 150px;
+    /* Ancho automático para mantener la proporción */
 }
 
 .text-section {
@@ -47,7 +82,8 @@
 
 .cuerpo {
     display: flex;
-    flex-direction: row; /* Mantén la alineación horizontal */
+    flex-direction: row;
+    /* Mantén la alineación horizontal */
     color: white;
 }
 
@@ -66,15 +102,18 @@
 .tamano2 {
     max-width: 100%;
     height: 600px;
- /* Espacio entre el párrafo y la imagen */
+    /* Espacio entre el párrafo y la imagen */
 }
 
 @media (max-width: 768px) {
     .cuerpo {
-        flex-direction: column; /* Cambia a alineación vertical en pantallas más pequeñas */
+        flex-direction: column;
+        /* Cambia a alineación vertical en pantallas más pequeñas */
     }
+
     .top-bar {
-        max-height: auto; /* Restaura el alto máximo predeterminado en pantallas más pequeñas */
+        max-height: auto;
+        /* Restaura el alto máximo predeterminado en pantallas más pequeñas */
     }
 }
 </style>
