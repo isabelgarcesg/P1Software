@@ -3,7 +3,7 @@
   <div class="container">
     <div class="card" style="width: 40rem;">
       <div class="card-body">
-        <h4 class="card-title mb-4 text-center"><strong>Creación de paciente</strong></h4>
+        <h4 class="card-title mb-4 text-center"><strong>Editar paciente</strong></h4>
 
         <form v-on:submit.prevent="editPacient">
           <div class="row">
@@ -58,7 +58,9 @@
                 <small id="helpId" class="form-text text-muted"></small>
               </div>
             </div>
-
+            <div>
+                <br>
+            </div>
             <div class="col-md-6">
               <label for="genero" class="form-label">Genero</label>
               <select class="form-select" id="genero" v-model="paciente.genero" required>
@@ -88,7 +90,9 @@
                 <small id="helpId" class="form-text text-muted"></small>
               </div>
             </div>
-
+            <div>
+                <br>
+            </div>
             <div class="col-md-6">
               <label for="eps" class="form-label">EPS</label>
               <select class="form-select" id="eps" v-model="paciente.eps" required>
@@ -118,6 +122,10 @@
                 <small id="helpId" class="form-text text-muted"></small>
               </div>
             </div>
+            <div>
+                <br>
+            </div>
+
             <div class="col-md-6">
               <div class="form-group">
                 <label for="ptt">Ptt</label>
@@ -149,6 +157,10 @@
                 >
                 <small id="helpId" class="form-text text-muted"></small>
               </div>
+            </div>
+
+            <div>
+                <br>
             </div>
             <div class="col-md-6">
               <div class="form-group">
