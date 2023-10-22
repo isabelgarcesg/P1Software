@@ -2,10 +2,9 @@
     
       <div class="container">
         <div class="card" style="width: 40rem;">
-          <div class="card-header">
-            <b>Creación de paciente</b>
-          </div>
+          
           <div class="card-body">
+            <h4 class="card-title mb-4 text-center"><strong>Creación de paciente</strong></h4>
             <form v-on:submit.prevent="createPacient">
               <div class="row">
                 <div class="col-md-12">
@@ -43,7 +42,7 @@
                     <small id="helpId" class="form-text text-muted"></small>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                   <div class="form-group">
                     <label for="documento">Documento de identidad</label>
                     <input
@@ -73,7 +72,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                   <div class="form-group">
                     <label for="edad">Edad</label>
                     <input
@@ -95,15 +94,15 @@
                   <select class="form-select" id="eps" v-model="paciente.eps" required>
                     <option selected disabled value=""></option>
                     <option value="SURA">SURA</option>
-                    <option value="Comeva">Comefa</option>
-                    <option value="Sabia salud">Sabia salud</option>
+                    <option value="Comeva">Comeva</option>
+                    <option value="Sabia salud">Savia salud</option>
                   </select>
                   <div class="invalid-feedback">
                     Please select a valid state.
                   </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                   <div class="form-group">
                     <label for="tp">Tp</label>
                     <input
@@ -135,7 +134,7 @@
                     <small id="helpId" class="form-text text-muted"></small>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                   <div class="form-group">
                     <label for="at">At</label>
                     <input
@@ -167,7 +166,7 @@
                     <small id="helpId" class="form-text text-muted"></small>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                   <div class="form-group">
                     <label for="fibrinogeno">Fibrinogeno</label>
                     <input
@@ -234,14 +233,19 @@
 </script>
 
 
-<!-- <style lang="scss" scoped>
+<style lang="scss" scoped>
 
 //import '@/public/style.css';
 
 div{
     
     .card{
-        background-color: var(--light-blue);
+      background-color: #fdfdfd;
+    display: flex;
+    margin-right: 10rem;
+    margin-left: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     }
 }
 
@@ -253,7 +257,9 @@ select{
     border-radius:10px;
 }
 
-</style> -->
+
+
+</style>
 
 
 
