@@ -20,15 +20,22 @@
                 <span class="material-icons">document</span>
                 <span class="text">About</span>
             </router-link> -->
-            <router-link class="botton" to="/ListarPacientes">
-                <span class="material-icons">apartment</span>
-                <span class="text">Pacientes</span>
-            </router-link> 
-
             <router-link class="botton" to="/CrearPaciente">
-                <span class="material-icons">person</span>
+                <span class="material-icons">person_add</span>
                 <span class="text">Crear paciente</span>
             </router-link>
+
+            <router-link class="botton" to="/ListarPacientes">
+                <span class="material-icons">science</span>
+                <span class="text">Laboratorio</span>
+            </router-link> 
+
+            <router-link class="botton" to="/ListarUnPacientes">
+                <span class="material-icons">person</span>
+                <span class="text">Paciente</span>
+            </router-link> 
+
+
 
         
         </div>

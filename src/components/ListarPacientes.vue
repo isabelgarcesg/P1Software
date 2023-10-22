@@ -30,14 +30,14 @@
                   </td> -->
                   <td scope="row">{{ paciente.documento }}</td>
                   <td> {{paciente.nombre}} {{paciente.apellidos}}</td>
-                  <td> "link resultados"  <!-- ACA PONER ROUTER LINK A PAGINA RESULTADOS POR PACIENTE CORREGIDO:  -->
+                  <td> <router-link :to="{ name: 'VerResultados', params: { id: paciente.documento } }">Ver resultados</router-link> <!-- ACA PONER ROUTER LINK A PAGINA RESULTADOS POR PACIENTE CORREGIDO:  -->
                     <!-- <router-link :to="{ name: 'ListarUnPaciente', params: { id: paciente.documento }}"  class="custom-link">Resultado prueba de coagulación</router-link> -->
                   </td>
                   <td>
-                    <div class="btn-group" role="group" aria-label="">
-                      <router-link :to="{ name: 'EditarPaciente', params: { id: paciente.id } }" class="btn btn-info">Editar</router-link>
-                      <button type="button" v-on:click="borrarPaciente(paciente.id)" class="btn btn-danger">Borrar</button>
-                    </div>                  
+
+                      <router-link :to="{ name: 'EditarPaciente', params: { id: paciente.documento } }" class="btn btn-info">Editar</router-link>
+                      <button type="button" v-on:click="borrarPaciente(paciente.id)" class="btn btn-danger" style="margin-left: 10px;">Borrar</button>
+          
                   </td>
                 </tr>
               </tbody>

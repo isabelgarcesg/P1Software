@@ -5,6 +5,7 @@ import ListarPacientes from '../components/ListarPacientes.vue'
 import ListarUnPaciente from '../components/ListarUnPaciente.vue'
 import EditarPaciente from '../components/EditarPaciente.vue'
 import CrearPaciente from '../components/CrearPaciente.vue'
+import VerResultados from '../components/VerResultados.vue'
 
 const routes = [
 {
@@ -17,6 +18,11 @@ const routes = [
     path: '/EditarPaciente/:id',
     name: 'EditarPaciente',
     component: EditarPaciente
+  },
+  {
+    path: '/VerResultados/:id',
+    name: 'VerResultados',
+    component: VerResultados
   },
   {
     path: '/ListarPacientes',
