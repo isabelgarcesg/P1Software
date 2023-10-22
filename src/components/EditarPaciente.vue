@@ -2,10 +2,9 @@
     
   <div class="container">
     <div class="card" style="width: 40rem;">
-      <div class="card-header">
-        <b>Creación de paciente</b>
-      </div>
       <div class="card-body">
+        <h4 class="card-title mb-4 text-center"><strong>Creación de paciente</strong></h4>
+
         <form v-on:submit.prevent="editPacient">
           <div class="row">
             <div class="col-md-12">
@@ -243,10 +242,21 @@ export default {
 }
 
 
-</script>
+</script >
 
 
 <style lang="scss" scoped>
+div{
+    
+    .card{
+      background-color: #fdfdfd;
+    display: flex;
+    margin-right: 10rem;
+    margin-left: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    }
+  }
 input{
     border-radius:10px;
 }
