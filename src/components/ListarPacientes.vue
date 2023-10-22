@@ -29,16 +29,18 @@
                     <!-- <router-link :to="{ name: 'ListarUnPaciente', params: { id: paciente.documento }}"  class="custom-link">Resultado prueba de coagulación</router-link> -->
                   </td>
                   <td>
-
+                    <!-- 
                     <router-link :to="{ name: 'EditarPaciente', params: { id: paciente.documento } }"
-                      class="btn btn-outline-info">Editar</router-link>
-
+                      class="btn btn-outline-info">Editar</router-link> -->
+                    <router-link :to="{ name: 'EditarPaciente', params: { id: paciente.documento } }"
+                      style="border: none; background: none;"><span class="material-icons text-muted"
+                        style="font-size: 24px;">edit</span></router-link>
 
                     <!-- <button type="button" v-on:click="borrarPaciente(paciente.id)" class="btn btn-outline-danger" style="margin-left: 10px;">Borrar</button> -->
                     <!-- Button trigger modal BOTON BORRAR CON CONFIRMACIÓN -->
-                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
-                      data-bs-target="#staticBackdrop" style="margin-left: 10px;">
-                      Borrar
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                      style="margin-left: 10px; border: none; background: none;">
+                      <span class="material-icons text-muted" style="font-size: 24px;">delete</span>
                     </button>
 
                     <!-- Modal -->
@@ -165,4 +167,5 @@ export default {
     color: #a6cffd;
     /* Color de texto al pasar el cursor (azul) */
   }
-}</style>
+}
+</style>
