@@ -1,19 +1,13 @@
 <template>
-  <div>
-    <nav class="navbar navbar-expand navbar-light bg-light">
-
-
-    </nav>
-
-
-    <!-- Agregar margen superior al card para separarlo de la barra de navegación -->
+  <div class="personal">
     <div class="container mt-3">
       <div class="d-flex justify-content-center">
         <div class="card">
-          <div class="card-header">
-            Paciente
-          </div>
+
           <div class="card-body">
+            <h4 class="card-title mb-4 text-center"><strong>Resultado Prueba de coagulación</strong></h4>
+            <router-link :to="{ name: 'home' }"
+                                ><span class="material-icons text-muted" style="font-size: 24px;">arrow_back</span></router-link>
             <table class="table table-responsive">
               <tbody>
                 <tr>
@@ -63,8 +57,6 @@
                 </tr>
               </tbody>
             </table>
-            <div class="regresar"><router-link :to="{ name: 'home' }"
-                class="btn btn-primary">Regresar</router-link></div>
           </div>
 
 
@@ -126,4 +118,42 @@ export default {
 
 
 }
+.personal {
+    background-color: #ffffff;
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.container {
+    background-color: #dae2eb;
+    display: flex;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.card {
+    background-color: #fdfdfd;
+    display: flex;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    .regresar{
+        background-color: #fdfdfd;
+        display: flex;
+        margin-right: 2rem;
+    margin-left: 40rem;
+    margin-top: 13rem;
+    margin-bottom:0;
+
+    }
+  }
 </style>
