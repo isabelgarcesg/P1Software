@@ -35,10 +35,11 @@ const routes = [
     component: CrearPaciente
   },
   {
-    path: '/ListarUnPaciente',
+    path: '/ListarUnPaciente/:documento',
     name: 'ListarUnPaciente',
     component: ListarUnPaciente
   },
+
   {
     path: '/about',
     name: 'about',

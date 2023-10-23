@@ -30,10 +30,6 @@
                 <span class="text">Laboratorio</span>
             </router-link> 
 
-            <router-link class="botton" to="/ListarUnPacientes">
-                <span class="material-icons">person</span>
-                <span class="text">Paciente</span>
-            </router-link> 
 
 
 
