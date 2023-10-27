@@ -1,6 +1,6 @@
 <template>
   <div class="personal">
-    <div class="container mt-3">
+    <div class="container mt-3 justify-content-center">
       <div class="d-flex justify-content-center">
         <div class="card">
 
@@ -11,18 +11,18 @@
             <table class="table table-responsive">
               <tbody>
                 <tr>
-                  <td></td>
-                  <td colspan="2" style="text-align: center;">
+                  
+                  <td colspan="5" style="text-align: center ">
                     <strong>Documento:</strong> {{ paciente.documento }}
                   </td>
-                  <td></td>
+                  
                 </tr>
                 <tr>
-                  <td></td>
-                  <td colspan="2" style="text-align: center;">
+               
+                  <td colspan="5" style="text-align: center;">
                     <strong>Nombre:</strong> {{ paciente.nombre }} {{ paciente.apellidos }}
                   </td>
-                  <td></td>
+               
                 </tr>
                 <tr>
                   <td colspan="2" style="text-align: center;">
@@ -125,26 +125,33 @@ export default {
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-
+    width: 100%;
+    align-items: center;
 }
 
 .container {
     background-color: #dae2eb;
     display: flex;
-    margin-right: 10rem;
-    margin-left: 10rem;
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 60%;
+    height: 65%;
+    // margin-right: 10rem;
+    // margin-left: 10rem;
+    // margin-top: 0;
+    // margin-bottom: 0;
+    align-items: center;
 
 }
 
 .card {
     background-color: #fdfdfd;
     display: flex;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    width: 85%;
+    height: 90%;
+    
+    // margin-right: 2rem;
+    // margin-left: 2rem;
+    // margin-top: 2rem;
+    // margin-bottom: 2rem;
 
     .regresar{
         background-color: #fdfdfd;

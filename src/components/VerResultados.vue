@@ -1,7 +1,7 @@
 <template>
     <div class="personal">
         <!-- Agregar margen superior al card para separarlo de la barra de navegación -->
-        <div class="container mt-3">
+        <div class="container mt-3 justify-content-center">
             <div class="d-flex justify-content-center">
                 <div class="card">
                     <div class="card-body">
@@ -88,18 +88,20 @@ export default {
 
 <style lang="scss" scoped>
 .custom-link {
-    text-decoration: underline;
-    /* Añade un subrayado */
-    color: black;
-    /* Cambia el color del subrayado a negro */
+  text-decoration: underline;
+  /* Añade un subrayado */
+  color: black;
+  /* Cambia el color del subrayado a negro */
 }
+
 
 .custom-link:hover {
 
-    color: var(--primary); //Al pasar por encima se ve azul
+
+  color: var(--primary); //Al pasar por encima se ve azul
+
 
 }
-
 .personal {
     background-color: #ffffff;
     display: flex;
@@ -107,26 +109,33 @@ export default {
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-
+    width: 100%;
+    align-items: center;
 }
 
 .container {
     background-color: #dae2eb;
     display: flex;
-    margin-right: 10rem;
-    margin-left: 10rem;
-    margin-top: 0;
-    margin-bottom: 0;
+    width: 60%;
+    height: 65%;
+    // margin-right: 10rem;
+    // margin-left: 10rem;
+    // margin-top: 0;
+    // margin-bottom: 0;
+    align-items: center;
 
 }
 
 .card {
     background-color: #fdfdfd;
     display: flex;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    width: 85%;
+    height: 90%;
+    
+    // margin-right: 2rem;
+    // margin-left: 2rem;
+    // margin-top: 2rem;
+    // margin-bottom: 2rem;
 
     .regresar{
         background-color: #fdfdfd;
@@ -137,6 +146,5 @@ export default {
     margin-bottom:0;
 
     }
-}
-
+  }
 </style>
