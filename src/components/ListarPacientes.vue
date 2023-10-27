@@ -1,9 +1,9 @@
 <template>
   <div class="personal">
     <!-- Agregar margen superior al card para separarlo de la barra de navegación -->
-    <div class="container mt-3">
+    <div class="container mt-3 justify-content-center">
       <div class="d-flex justify-content-center">
-        <div class="card">
+        <div class="card " style="width: 40rem;">
 
           <div class="card-body">
             <h4 class="card-title mb-4 text-center"><strong>Lista de pacientes</strong></h4>
@@ -67,6 +67,7 @@
                 </tr>
               </tbody>
             </table>
+          
           </div>
 
         </div>
@@ -130,20 +131,18 @@ export default {
 .personal {
   background-color: #ffffff;
   display: flex;
-  margin-right: 0;
-  margin-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-
+  // margin-right: 0;
+  // margin-left: 0;
+  // margin-top: 0;
+  // margin-bottom: 0;
 }
-
 .container {
   background-color: #dae2eb;
   display: flex;
-  margin-right: 10rem;
-  margin-left: 18rem;
-  margin-top: 0;
-  margin-bottom: 0;
+  // margin-right: 10rem;
+  // margin-left: 18rem;
+  // margin-top: 0;
+  // margin-bottom: 0;
 
 }
 

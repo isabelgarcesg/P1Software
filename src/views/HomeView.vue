@@ -129,7 +129,8 @@ export default {
 
 .parrafo-azul {
     color: black;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin: 2rem;
 }
 
 .tamano2 {
