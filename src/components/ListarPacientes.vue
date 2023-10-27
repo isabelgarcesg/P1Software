@@ -131,18 +131,19 @@ export default {
 .personal {
   background-color: #ffffff;
   display: flex;
-  // margin-right: 0;
-  // margin-left: 0;
-  // margin-top: 0;
-  // margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
 }
 .container {
   background-color: #dae2eb;
   display: flex;
-  // margin-right: 10rem;
-  // margin-left: 18rem;
-  // margin-top: 0;
-  // margin-bottom: 0;
+  margin-right: 20rem;
+  margin-left: 20rem;
+  margin-top: 0;
+  margin-bottom: 0;
 
 }
 
