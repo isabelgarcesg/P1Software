@@ -37,6 +37,7 @@
     </main>
 </template>
 
+
 <script>
 export default {
 
@@ -67,11 +68,9 @@ export default {
     max-height: 180px;
 
     .search-section {
-
         display: flex;
         width: 280px;   
-        margin-left: 680px;
-
+        margin-left: auto; /* Mover el bloque de búsqueda a la derecha */
         button {
             background-color: var(--primary);
             border-color: var(--primary);
@@ -81,15 +80,12 @@ export default {
 
         button:hover {
             background-color: #d8d8d8;
-            /* Cambia el color de fondo a rojo al hacer hover */
             border-color: #d8d8d8;
-            /* Cambia el color del borde a rojo al hacer hover */
         }
 
         input {
             border-radius: 20px;
         }
-
     }
 
 }
@@ -100,23 +96,18 @@ export default {
 
 .tamano {
     max-height: 50%;
-    /* Ajusta la altura máxima del logo al de la barra superior */
     width: 150px;
-    /* Ancho automático para mantener la proporción */
 }
 
 .text-section {
     flex: 5;
     color: white;
-
-
-
 }
 
 .cuerpo {
-    display: flex;
-    flex-direction: row;
-    /* Mantén la alineación horizontal */
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Divide el cuerpo en dos columnas */
+    // grid-gap: 20px; /* Espacio entre las dos columnas */
     color: white;
 }
 
@@ -124,7 +115,9 @@ export default {
     background: var(--primary);
     padding: 20px;
     text-align: justify;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* El párrafo ocupa el espacio vertical */
 }
 
 .parrafo-azul {
@@ -135,19 +128,15 @@ export default {
 
 .tamano2 {
     max-width: 100%;
-    height: 600px;
-    /* Espacio entre el párrafo y la imagen */
+    height: auto; /* Ajustar la altura de la imagen automáticamente */
 }
 
 @media (max-width: 768px) {
     .cuerpo {
-        flex-direction: column;
-        /* Cambia a alineación vertical en pantallas más pequeñas */
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
     }
-
     .top-bar {
         max-height: auto;
-        /* Restaura el alto máximo predeterminado en pantallas más pequeñas */
     }
 }
 </style>
