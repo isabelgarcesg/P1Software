@@ -5,7 +5,7 @@
         <div class="card">
 
           <div class="card-body">
-            <h4 class="card-title mb-4 text-center"><strong>Resultado Prueba de coagulación</strong></h4>
+            <h4 class="card-title mb-4 text-center"><strong>Resultado prueba de coagulación</strong></h4>
             <router-link :to="{ name: 'home' }"
                                 ><span class="material-icons text-muted" style="font-size: 24px;">arrow_back</span></router-link>
             <table class="table table-responsive">
@@ -133,7 +133,7 @@ export default {
     background-color: #dae2eb;
     display: flex;
     width: 60%;
-    height: 65%;
+    height: 80%;
     // margin-right: 10rem;
     // margin-left: 10rem;
     // margin-top: 0;

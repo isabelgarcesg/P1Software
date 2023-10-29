@@ -117,7 +117,7 @@ export default {
     background-color: #dae2eb;
     display: flex;
     width: 60%;
-    height: 65%;
+    height: 80%;
     // margin-right: 10rem;
     // margin-left: 10rem;
     // margin-top: 0;
@@ -125,6 +125,7 @@ export default {
     align-items: center;
 
 }
+
 
 .card {
     background-color: #fdfdfd;
