@@ -40,7 +40,7 @@
                   <!-- Button trigger modal BOTON BORRAR CON CONFIRMACIÓN -->
                   <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                     style="margin-left: 10px; border: none; background: none;">
-                    <span class="material-icons text-muted" style="font-size: 24px;">delete</span>
+                    <span class="material-icons text-muted" style="font-size: 24px;"  v-on:click="PacienteSeleccionado = paciente" >delete</span>
                   </button>
 
                   <!-- Modal -->
@@ -58,7 +58,7 @@
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                           <button type="button" class="btn btn-primary"
-                            v-on:click="borrarPaciente(paciente.id)">Entendido</button>
+                            v-on:click="borrarPaciente(PacienteSeleccionado.id)">Entendido</button>
                         </div>
                       </div>
                     </div>
