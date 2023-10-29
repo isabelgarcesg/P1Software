@@ -21,7 +21,7 @@
                 <div class="form-group">
                   <label for="apellidos">Apellidos</label>
                   <input type="text" class="form-control" name="apellidos" v-model="paciente.apellidos" id="apellidos"
-                    aria-describedby="helpId" placeholder="apellidos" required>
+                    aria-describedby="helpId" placeholder="Apellidos" required>
                   <small id="helpId" class="form-text text-muted"></small>
                 </div>
               </div>
@@ -29,7 +29,7 @@
                 <div class="form-group">
                   <label for="documento">Documento de identidad</label>
                   <input type="text" class="form-control" name="documento" v-model="paciente.documento" id="documento"
-                    aria-describedby="helpId" placeholder="documento" required>
+                    aria-describedby="helpId" placeholder="Documento" required>
                   <small id="helpId" class="form-text text-muted"></small>
                 </div>
               </div>
@@ -51,14 +51,14 @@
                 <div class="form-group">
                   <label for="edad">Edad</label>
                   <input type="text" class="form-control" name="edad" v-model="paciente.edad" id="edad"
-                    aria-describedby="helpId" placeholder="edad" required>
+                    aria-describedby="helpId" placeholder="Edad" required>
                   <small id="helpId" class="form-text text-muted"></small>
                 </div>
               </div>
 
               <div class="col-md-6">
                 <label for="eps" class="form-label">EPS</label>
-                <select class="form-select" id="eps" v-model="paciente.eps" required>
+                <select class="form-select" id="eps" v-model="paciente.eps" required placeholder="EPS">
                   <option selected disabled value=""></option>
                   <option value="SURA">SURA</option>
                   <option value="Comeva">Comeva</option>
@@ -71,41 +71,41 @@
 
               <div class="col-md-6 mb-4">
                 <div class="form-group">
-                  <label for="tp">Tp</label>
+                  <label for="tp">Tiempo de Protrombina</label>
                   <input type="text" class="form-control" name="tp" v-model="paciente.tp" id="tp"
-                    aria-describedby="helpId" placeholder="tp" required>
+                    aria-describedby="helpId" placeholder="Tiempo de Protrombina" required>
                   <small id="helpId" class="form-text text-muted"></small>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="ptt">Ptt</label>
+                  <label for="ptt">Tiempo de Tromboplastina Parcial</label>
                   <input type="text" class="form-control" name="ptt" v-model="paciente.ptt" id="ptt"
-                    aria-describedby="helpId" placeholder="ptt" required>
+                    aria-describedby="helpId" placeholder="Tiempo de Tromboplastina Parcial" required>
                   <small id="helpId" class="form-text text-muted"></small>
                 </div>
               </div>
               <div class="col-md-6 mb-4">
                 <div class="form-group">
-                  <label for="at">At</label>
+                  <label for="at">Antitrombina III</label>
                   <input type="text" class="form-control" name="at" v-model="paciente.at" id="at"
-                    aria-describedby="helpId" placeholder="at" required>
+                    aria-describedby="helpId" placeholder="Antitrombina III" required>
                   <small id="helpId" class="form-text text-muted"></small>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="tt">tt</label>
+                  <label for="tt">Tiempo de Trombina</label>
                   <input type="text" class="form-control" name="tt" v-model="paciente.tt" id="tt"
-                    aria-describedby="helpId" placeholder="tt" required>
+                    aria-describedby="helpId" placeholder="Tiempo de Trombina" required>
                   <small id="helpId" class="form-text text-muted"></small>
                 </div>
               </div>
               <div class="col-md-6 mb-4">
                 <div class="form-group">
-                  <label for="fibrinogeno">Fibrinogeno</label>
+                  <label for="fibrinogeno">Fibrinógeno</label>
                   <input type="text" class="form-control" name="fibrinogeno" v-model="paciente.fibrinogeno"
-                    id="fibrinogeno" aria-describedby="helpId" placeholder="fibrinogeno" required>
+                    id="fibrinogeno" aria-describedby="helpId" placeholder="Fibrinógeno" required>
                   <small id="helpId" class="form-text text-muted"></small>
                 </div>
               </div>
@@ -136,8 +136,6 @@ export default {
     }
   },
   methods: {
-    //  SI QUIERE VERIFICAR QUE SE CREO LA ENTIDAD PONGA EL SIGUIENTE LINK EN EL NAVEGADOR:
-    // https://redb.qsystems.co/QS3100/QServlet?operation=queryEntityByTenancy&tna=6&key=11e2e476-717b-4898-ac02-693abdecdc9b
     createPacient() {
       console.log(this.paciente)
       console.log(this.paciente.eps)
@@ -149,7 +147,7 @@ export default {
         .then(respuesta => respuesta.json())
         .then((datosRespuesta => {
           console.log(datosRespuesta);
-          window.location.href = '/ListarPacientes' //Redirecciona a la ruta listar
+          window.location.href = '/ListarPacientes' 
         }))
     }
   }
